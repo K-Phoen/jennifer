@@ -314,6 +314,21 @@ func (s *Statement) Call(params ...Code) *Statement {
 	return s
 }
 
+// Call renders a comma separated list enclosed by parenthesis. Use for function calls.
+func (s *Statement) MultiLineCall(params ...Code) *Statement {
+	g := &Group{
+		close:     ")",
+		items:     params,
+		multi:     true,
+		name:      "call",
+		open:      "(",
+		separator: ",",
+	}
+
+	*s = append(*s, g)
+	return s
+}
+
 // CallFunc renders a comma separated list enclosed by parenthesis. Use for function calls.
 func CallFunc(f func(*Group)) *Statement {
 	return newStatement().CallFunc(f)
