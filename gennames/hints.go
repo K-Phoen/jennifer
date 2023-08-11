@@ -6,13 +6,11 @@ import (
 	"io"
 	"os"
 	"os/exec"
+	"path/filepath"
+	"regexp"
 	"strings"
 
-	"regexp"
-
-	"path/filepath"
-
-	. "github.com/dave/jennifer/jen"
+	. "github.com/K-Phoen/jennifer/jen"
 )
 
 func hints(w io.Writer, pkg, name, goListPath, filter string, standard, novendor bool) error {

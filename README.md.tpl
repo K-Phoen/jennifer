@@ -1,4 +1,4 @@
-[![docs](https://pkg.go.dev/badge/github.com/dave/jennifer/jen.svg)](https://pkg.go.dev/github.com/dave/jennifer/jen)
+[![docs](https://pkg.go.dev/badge/github.com/K-Phoen/jennifer/jen.svg)](https://pkg.go.dev/github.com/K-Phoen/jennifer/jen)
 ![stability-stable](https://img.shields.io/badge/stability-stable-brightgreen.svg)
 
 # Jennifer
@@ -10,7 +10,7 @@ package main
 import (
     "fmt"
 
-    . "github.com/dave/jennifer/jen"
+    . "github.com/K-Phoen/jennifer/jen"
 )
 
 func main() {{ "ExampleNewFile" | code }}
@@ -22,7 +22,7 @@ Output:
 
 ### Install
 ```
-go get -u github.com/dave/jennifer/jen
+go get -u github.com/K-Phoen/K-Phoen/jen
 ```
 
 ### Need help?
@@ -31,7 +31,7 @@ chat: I'm happy to help! Feel free to open an issue, email me or mention @dave
 in your PR.
 
 ### Examples
-Jennifer has a comprehensive suite of examples - see [godoc](https://godoc.org/github.com/dave/jennifer/jen#pkg-examples) for an index. Here's some examples of jennifer being used in the real-world:
+Jennifer has a comprehensive suite of examples - see [godoc](https://godoc.org/github.com/K-Phoen/jennifer/jen#pkg-examples) for an index. Here's some examples of jennifer being used in the real-world:
 
 * [genjen](genjen/render.go) (which generates much of jennifer, using data in [data.go](genjen/data.go))
 * [zerogen](https://github.com/mrsinham/zerogen/blob/master/generator.go)
